@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>St. Mary's Catholic School</title>
+    <link href="./assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="semantic/out/semantic.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js">
+    </script>
+    <script src="semantic/out/semantic.min.js">
+    </script>
+      <script>
+          $(document).ready(function() {
+              $('#navbar').load('assets/html-navbar-footer/navigation.html');
+              $('#footer').load('assets/html-navbar-footer/footer.html');
+          });
+        </script>
+</head>
+<body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div class="ui divbg container">
+        <img class="ui centered image" height="128px" src="assets/images/logo.png"> 
+        <div class="ui container">
+            <div id="navbar"></div>
+            <div class="ui basic padded segment">
+                <div class="slideshow-container">
+                    <div class="slides fade">
+                    <div class="numbertext">
+                        1 / 7
+                    </div><img src="assets/images/1.jpg" style="width:100%"></div>
+                    <div class="slides fade">
+                    <div class="numbertext">
+                        2 / 7
+                    </div><img src="assets/images/2.jpg" style="width:100%"></div>
+                    <div class="slides fade">
+                    <div class="numbertext">
+                        3 / 7
+                    </div><img src="assets/images/3.jpg" style="width:100%"></div>
+                    <div class="slides fade">
+                    <div class="numbertext">
+                        4 / 7
+                    </div><img src="assets/images/4.jpg" style="width:100%"></div>
+                    <div class="slides fade">
+                    <div class="numbertext">
+                        5 / 7
+                    </div><img src="assets/images/5.jpg" style="width:100%"></div>
+                    <div class="slides fade">
+                    <div class="numbertext">
+                        6 / 7
+                    </div><img src="assets/images/6.jpg" style="width:100%"></div>
+                    <div class="slides fade">
+                    <div class="numbertext">
+                        7 / 7
+                    </div><img src="assets/images/7.jpg" style="width:100%"></div>
+                </div><br>
+                <div style="text-align:center">
+                    <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>
+                </div>
+            </div>
+            <div class="ui basic padded segment">
+              <div style="width: 645px; height: 520px;" class="ui segment">
+                <div class="ui header">
+                   St. Mary's Catholic School Latest News
+                 </div>
+                 <p>Below this message is our news page, powered by <a href="https://www.blogger.com/">Blogger</a>. Latest news about the school, such as unexpected closures, sports information, or student life will be published here as quick access for parents.</p>
+               <iframe style="width: 612px; height: 384px;" src="http://www.blogspot.com"></iframe>
+               </div>
+                <div class="ui stackable grid">
+                    <div class="twelve wide column">
+                        <div class="ui stackable grid">
+                            <div class="ui row">
+                                <div class="ui column">
+                                    <div class="ui segment">
+                                        <div class="ui header">
+                                            Welcome to St. Mary's Catholic School
+                                        </div>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui row">
+                                <div class="six wide column">
+                                     <img src="assets/images/principal-welcome.jpg">
+                                </div>
+
+                                <div class="ten wide column">
+
+                                    <h2>Principal's welcome</h2>
+                                    <p>You are very welcome to the website of the world's first Christian Brothers Secondary School.</p>
+                                    <p>Our school's ethos is one which puts pupils first, promotes a safe, caring environment and fosters a sense of respect and concern for others. Our excellent teachers provide the highest
+                                    standards of teaching through their commitment to and use of progressive, innovative methodologies.</p>
+                                    <p>St. Mary's Catholic School promotes a sense of a whole school community and to that end parents and pupils inform new developments within the school.</p>
+                                    <p>The school is proud of its long tradition of excellence in education. We always seek to revise and develop our procedures and policies to maintain and enhance that long-standing
+                                    tradition.</p>
+                                    <p>Sandra Paula</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fb-page" data-href="https://www.facebook.com/" data-tabs="timeline" data-width="250" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/st.mary's  cbs/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/st.mary's  cbs/">St. Mary's Catholic School Secondary School</a></blockquote></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+    <script>
+               var slideIndex = 0;
+               showSlides();
+
+               function showSlides() {
+                   var slides = document.getElementsByClassName("slides");
+                   var dots = document.getElementsByClassName("dot");
+                   for (i = 0; i < slides.length; i++) {
+                       slides[i].style.display = "none";
+                   }
+                   slideIndex++;
+                   if (slideIndex > slides.length) { slideIndex = 1 }
+                   for (var i = 0; i < dots.length; i++) {
+                       dots[i].className = dots[i].className.replace(" active", "");
+                   }
+                   slides[slideIndex - 1].style.display = "block";
+                   dots[slideIndex - 1].className += " active";
+                   setTimeout(showSlides, 4000); // Change image every 4 seconds
+               }
+    </script>
+</body>
+</html>
